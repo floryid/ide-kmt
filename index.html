@@ -12,7 +12,14 @@
             <div class="header-title">
                 <h1>IDE-KMT Equipment & Personnel Management</h1>
                 <div class="site-manager">
-                    <p><span class="manager-label">Site Manager:</span> <span class="manager-name">Nofrinto Flory</span></p>
+                    <p>
+                        <span class="manager-label">Site Manager:</span>
+                        <select id="siteManagerSelect" class="site-manager-select" onchange="updateSiteManager(this.value)">
+                            <option value="Nofrinto Flory">Nofrinto Flory</option>
+                            <option value="Ongen Latuhamalo">Ongen Latuhamalo</option>
+                            <option value="Robby Junus">Robby Junus</option>
+                        </select>
+                    </p>
                 </div>
             </div>
             <div class="header-actions">
@@ -71,5 +78,6 @@
 
     <script src="script.js"></script>
     <script src="auth-ui.js"></script>
+    <script src="site-manager.js"></script>
 </body>
 </html>
