@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE-KMT Equipment & Personnel Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-title">
+                <h1>IDE-KMT Equipment & Personnel Management</h1>
+                <div class="site-manager">
+                    <p><span class="manager-label">Site Manager:</span> <span class="manager-name">Nofrinto Flory</span></p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="refresh-btn" onclick="window.location.reload()">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                    Refresh
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard">
+        <div class="summary-cards">
+            <div class="card">
+                <h3>Total Equipment</h3>
+                <p class="count" id="totalEquipment">14</p>
+            </div>
+            <div class="card">
+                <h3>Total Crew</h3>
+                <p class="count" id="totalCrew">31</p>
+            </div>
+            <div class="card crew-on-site">
+                <h3>Crew On Site</h3>
+                <p class="count" id="crewOnSite">0</p>
+            </div>
+            <div class="card crew-off-site">
+                <h3>Crew Off Site</h3>
+                <p class="count" id="crewOffSite">0</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <section class="equipment-section">
+                <div class="equipment-list" id="equipmentList"></div>
+            </section>
+
+            <section class="personnel-section">
+                <div class="personnel-categories" id="personnelCategories"></div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 IDE-KMT. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
